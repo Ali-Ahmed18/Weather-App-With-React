@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+SA+Beginner&family=Poppins&display=swap');
+:root{
+    --themeColor: black
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  color: var(--themeColor);
+}
+
+.main{
+  min-height: 100vh;
+  background-color: rgb(40, 67, 107);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weatherbox{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  border: 1px solid black;
+  border-radius: 10px;
+  /* height: 90%; */
+  height: 600px;
+  padding: 10px;
+  box-shadow: 3px 3px 10px 0 rgb(32, 32, 32);
+}
+.inputsection{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 15px 5px;
+}
+.inputsection form{
+  border: 0.125em solid #fff;
+  border-radius: 0.9375em;
+  background-color: #fff;
+}
+.inputsection input{
+  border: none;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: black !important;
+}
+.inputsection input:focus{
+  outline: none;
+}
+.inputsection button{
+  border: none;
+  background-color: #e99c29;
+  border-radius: 0.9375em;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 20px;
+  font-weight: 600;
+}
+.city{
+  text-align: center;
+}
+.centigrate{
+  font-size: 75px;
+  text-align: center;
+}
+.ForecastDetails{
+  margin-top: 20px;
+}
+.forecastWraper{
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.ForecastBox{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.nightBg{
+  background-color: linear-gradient(rgb(46, 51, 56) 0%, rgb(40, 67, 107) 36%) rgb(46, 51, 56);
+}
+.dayBg{
+  background-color: linear-gradient(rgb(124, 184, 255) 0%, rgb(223, 255, 251) 57%) rgb(223, 255, 251);
+}
+.doodleWraper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.doodleWraper img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.error{
+  width: 100%;
+  height: 100%;
+}
